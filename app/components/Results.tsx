@@ -34,7 +34,7 @@ export const Results = ({ query, animals }: any) => {
                 ? animals.map((animal: any) => {
                     return <Animal key={animal.id} animal={animal} />;
                   })
-                : "No animals found"}
+                : `No animals found for query: ${query}`}
             </section>
           </main>
 
