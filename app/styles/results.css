@@ -1,0 +1,153 @@
+/*
+result page header
+*/
+
+.result header {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 40px 0 30px;
+  align-items: center;
+}
+
+@media (min-width: 1000px) {
+  .result header {
+    padding: 30px 40px 0 70px;
+  }
+}
+
+.result header a {
+  padding-right: 30px;
+}
+
+.result header img {
+  width: 92px;
+  height: 30px;
+}
+
+.result header form {
+  border: 0;
+
+  width: 100%;
+  max-width: 540px;
+  width: 100%;
+  border-radius: 24px;
+  border: 1px solid #dfe1e5;
+  box-shadow: 0 1px 6px rgb(32 33 36 / 15%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 15px;
+}
+
+.result header input {
+  border: none;
+  border-radius: 24px;
+  width: 100%;
+  padding: 15px 0px 15px 20px;
+}
+
+.result header input:focus {
+  outline: 0;
+}
+
+.result header button {
+  border: none;
+  background-color: transparent;
+  width: 35px;
+  cursor: pointer;
+}
+
+.result header button svg {
+  fill: #4285f4;
+}
+
+/*
+result main
+*/
+
+.result main .animals-list {
+  width: 100%;
+  max-width: 900px;
+  padding: 50px 30px 0;
+}
+
+@media (min-width: 1000px) {
+  .result main .animals-list {
+    padding: 50px 70px 0;
+  }
+}
+
+.result main h3 {
+  margin: 0;
+}
+
+.result main a {
+  text-decoration: none;
+  color: var(--link-blue);
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.result main h3 a:hover {
+  text-decoration: underline;
+}
+
+.result main p {
+  margin: 5px 0px 30px 0;
+  font-size: 14px;
+  color: var(--lightgrey);
+}
+
+/*
+result wrapper
+*/
+
+.result .wrapper {
+  display: flex;
+  max-width: 1400px;
+  width: 100%;
+  background-color: transparent;
+
+  border-top: 1px solid lightgray;
+  margin-top: 50px;
+}
+
+/*
+result wrapper aside
+*/
+
+.result .wrapper aside {
+  display: none;
+}
+
+.result .wrapper aside h3 {
+  margin: 5px 0 0px 0;
+  color: black;
+  font-size: 30px;
+  font-weight: normal;
+}
+.result .wrapper aside p {
+  color: var(--lightgrey);
+  font-size: 14px;
+}
+
+.result .spacing {
+  padding: 20px;
+}
+
+@media (min-width: 1000px) {
+  .result .wrapper aside {
+    display: block;
+    border: 1px solid lightgray;
+    margin: 50px 40px 0 50px;
+    border-radius: 15px;
+    max-width: 368px;
+    width: 100%;
+    background-color: rgb(235, 232, 232);
+    overflow: hidden;
+    align-self: flex-start;
+  }
+  .result aside img {
+    width: 100%;
+  }
+}

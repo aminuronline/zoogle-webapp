@@ -1,0 +1,41 @@
+/*
+reset 
+
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+sticky footer 
+*/
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+section.content {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
+  background-color: rgb(241, 240, 240);
+  font-size: 15px;
+  padding: 5px 25px;
+}
+
+footer p {
+  color: grey;
+}
+
+:root {
+  --link-blue: #1a0dab;
+  --lightgrey: #4d5156;
+}
