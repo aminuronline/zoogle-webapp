@@ -1,0 +1,230 @@
+/*
+ name: "Malayan Tiger",
+          latin_name: "Panthera tigris jacksoni",
+          animal_type: "Mammal",
+          active_time: "Nocturnal",
+          length_min: "7.6",
+          length_max: "9.3",
+          weight_min: "220",
+          weight_max: "400",
+          lifespan: "15",
+          habitat: "Forest",
+          diet: "Deer, wild pigs, and cattle",
+          geo_range: "Malaysia and southern Thailand",
+          image_link:
+            "https://upload.wikimedia.org/wikipedia/commons/6/62/MalayanTiger01.jpg",
+          id: 113,
+*/
+
+/*
+body margin
+*/
+
+body {
+  margin: 0;
+}
+
+/*
+header nav
+*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid gray;
+  background-color: rgb(255, 166, 0);
+  padding: 10px 0 10px 10px;
+}
+
+header ul {
+  list-style: none;
+  margin: 10px;
+  padding-left: 0;
+  display: flex;
+}
+
+header li {
+  font-size: 20px;
+  margin: 10px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header li a img {
+  width: 100;
+  max-width: 50px;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+header a {
+  text-decoration: none;
+  color: red;
+}
+
+header a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  margin: 70px 0 20px 0;
+  color: rgb(219, 44, 44);
+}
+
+/*
+header img
+*/
+
+header .name img {
+  margin: 10px;
+  max-width: 80px;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: white;
+}
+
+header .name {
+  display: flex;
+  padding-right: 10px;
+}
+
+header h1 {
+  padding: 13px 0 13px 0;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.head {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  width: 100%;
+  background-image: url(https://cdn.wallpapersafari.com/82/24/mKibgs.jpg);
+}
+
+.head h2 {
+  padding: 20px;
+  border: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  color: rgb(255, 166, 0);
+  background-color: rgba(255, 255, 255, 0.918);
+  border-radius: 5px;
+}
+
+/*
+centering
+*/
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main img {
+  max-width: 750px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+main h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(45, 179, 11);
+  margin: 70px 0 10px 0;
+}
+
+main p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 0 15px 0;
+}
+
+/*
+aside
+*/
+
+.side {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid lightgrey;
+  padding-bottom: 15px;
+}
+
+aside {
+  margin: 148px 0 0 30px;
+  max-width: 300px;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  border: 2px solid lightgray;
+  border-radius: 15px;
+  align-self: flex-start;
+}
+
+aside h3 {
+  margin: 15px 0 15px 15px;
+  color: rgb(45, 179, 11);
+}
+
+aside a .monkey {
+  border: 1px solid red;
+}
+
+aside ul {
+  background-color: rgb(233, 233, 233);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  list-style: none;
+  padding: 10px 0 5px 10px;
+  height: 100%;
+  margin: 0;
+}
+
+aside li {
+  margin-bottom: 30px;
+  max-height: 100%;
+}
+
+/*
+button
+*/
+
+button {
+  margin: 30px 0;
+  border: 1px solid grey;
+  border-radius: 3px;
+  background-color: rgb(0, 183, 255);
+  padding: 20px 30px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button a {
+  text-decoration: none;
+  color: rgb(247, 252, 0);
+  font-size: 20px;
+}
+
+main h3,
+aside h3 {
+  font-size: 30px;
+}

@@ -9,3 +9,10 @@ export const getAnimals = (query: string) => {
   });
   return results;
 };
+
+export const getAnimal = (id: string) => {
+  if (!id) return null;
+
+  const animal = animalsData.find((animal: any) => animal.id === Number(id));
+  return animal;
+};

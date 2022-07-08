@@ -1,29 +1,20 @@
-import { Results } from "~/components/Results";
-import stylesUrl from "../styles/results.css";
-import type { LoaderFunction, LinksFunction } from "@remix-run/node";
-import { json } from "@remix-run/node";
-import { getAnimals } from "~/models/animals.server";
-import { useLoaderData, useSearchParams } from "@remix-run/react";
-// export const links: LinksFunction = () => [
-//   { rel: "stylesheet", href: stylesUrl },
-// ];
+import type { LinksFunction, LoaderFunction } from "@remix-run/node";
+import Animal from "~/components/Animal";
+import { getAnimal } from "~/models/animals.server";
+import { useLoaderData } from "@remix-run/react";
+import stylesUrl from "~/styles/animal.css";
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: stylesUrl },
+];
 
-// export const loader: LoaderFunction = async ({ request }) => {
-//   const url = new URL(request.url);
-//   const term = url.searchParams.get("q");
+export const loader: LoaderFunction = ({ params }) => {
+  const animalId = params?.animalId ?? "";
+  const animal = getAnimal(animalId);
+  return animal;
+};
 
-//   const animals = getAnimals(term ?? "");
-//   if (animals.length > 15) {
-//     return json(animals.slice(0, 15));
-//   }
-//   return json(animals);
-// };
-
-export default function Result() {
-  // const [searchParams] = useSearchParams();
-  // const [query] = searchParams.getAll("q");
-  // const animals = useLoaderData();
-  // console.log(animals, query);
-  // return <Results query={query} animals={animals} />;
-  return <p>hi</p>;
+export default function AnimalRoute() {
+  const animal = useLoaderData();
+  console.log(animal);
+  return <Animal animal={animal} />;
 }

@@ -31,7 +31,11 @@ export const Search = () => {
         <main>
           <img src={zoogleLogo} alt="zoogle logo" />
           <Form method="get" action="/results">
-            <input name="q" type="search" />
+            <input
+              name="q"
+              type="search"
+              placeholder="Search for your favourite animal"
+            />
             <button type="submit">Zoogle Search</button>
           </Form>
         </main>

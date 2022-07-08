@@ -1,6 +1,6 @@
 import zoogleLogo from "~/images/zoogle-logo.png";
 import { Form } from "@remix-run/react";
-import Animal from "./Animal";
+import AnimalResult from "./AnimalResult";
 import Aside from "./Aside";
 import { Footer } from "./Footer";
 export const Results = ({ query, animals }: any) => {
@@ -12,7 +12,12 @@ export const Results = ({ query, animals }: any) => {
             <img src={zoogleLogo} alt="" />
           </a>
           <Form method="get">
-            <input name="q" type="search" id="search" />
+            <input
+              name="q"
+              type="search"
+              id="search"
+              placeholder="Search for your favourite animal"
+            />
             <button type="submit">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +37,7 @@ export const Results = ({ query, animals }: any) => {
                 ? "Please enter an animal to search"
                 : animals.length
                 ? animals.map((animal: any) => {
-                    return <Animal key={animal.id} animal={animal} />;
+                    return <AnimalResult key={animal.id} animal={animal} />;
                   })
                 : `No animals found for query: ${query}`}
             </section>
